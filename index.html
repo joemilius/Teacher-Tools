@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Teacher Tools</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Teacher Tools</h1>
+        </header>
+        <div id="sidebar">
+            <h2>Tool Bar</h2>
+            <div id="weather-container">
+                <h3>Today's Forecast</h3>
+                <form id="location-form">
+                    <input id="location" placeholder="Enter City"/>
+                    <button type="submit">Enter</button>
+                </form>
+                <div id="weather-scroll">
+
+                </div>
+            </div>
+            <div id="calculator-container">
+                <h3>Calculator</h3>
+                <h4>0</h4>
+                <div id="calculator-button-container">
+                <button class="calculator-button equation number">1</button>
+                <button class="calculator-button equation number">2</button>
+                <button class="calculator-button equation number">3</button>
+                <button class="calculator-button equation">+</button>
+                <button class="calculator-button equation number">4</button>
+                <button class="calculator-button equation number">5</button>
+                <button class="calculator-button equation number">6</button>
+                <button class="calculator-button equation">-</button>
+                <button class="calculator-button equation number">7</button>
+                <button class="calculator-button equation number">8</button>
+                <button class="calculator-button equation number">9</button>
+                <button class="calculator-button equation">x</button>
+                <button id = "bottom-left" class="calculator-button clear bottom">AC</button>
+                <button class="calculator-button equation number bottom">0</button>
+                <button class="calculator-button equals bottom">=</button>
+                <button id = "bottom-right" class="calculator-button equation bottom">/</button>
+            </div>
+            </div>
+        </div>
+        <script src="src/weather.js" charset="utf-8"></script>
+        <script src="src/calculator.js" charset="utf-8"></script>
+    </body>
+
+</html>
