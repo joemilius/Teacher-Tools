@@ -34,7 +34,7 @@ equalsButton.addEventListener('click', (event) => {
         equationArray.pop()
     }
 
-    if(operationArray.some((element) => equationArray.includes(element)) && !actionArray.includes(equationArray[0]) && equationArray[0] !== ''){
+    if(operationArray.some((element) => equationArray.includes(element)) && !operationArray.includes(equationArray[0]) && equationArray[0] !== ''){
         for(let i = 0; i < equationArray.length; i++){
             if('x' === equationArray[i]){
                     equationArray.splice((i - 1), 3, `${parseFloat(equationArray[i - 1]) * parseFloat(equationArray[i + 1])}`)
