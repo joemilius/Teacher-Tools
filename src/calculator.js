@@ -1,8 +1,23 @@
+let calcContent = document.querySelector('#calculator-content')
+let calcHeader = document.querySelector('#calculator-container h3')
 let calcText = document.querySelector("#calculator-container h4")
 let equationButtons = document.querySelectorAll('.equation')
 let equalsButton = document.querySelector('.equals')
 let clearButton = document.querySelector('.clear')
 
+// Calculator Collapse //
+console.log(calcHeader)
+calcHeader.addEventListener('click', (event)=> {
+    if(calcContent.className === 'hide'){
+        calcContent.className = ''
+        calcHeader.textContent = 'Calculator 🔽'
+    } else {
+        calcContent.className = 'hide'
+        calcHeader.textContent = 'Calculator ▶️'
+    }
+})
+
+// Calculator Equation Handling //
 let equation = ''
 let currentText = ''
 
