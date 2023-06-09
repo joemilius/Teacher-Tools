@@ -146,7 +146,7 @@ div#weather-scroll{
 /* TIMER STYLING */
 
 #timer-container {
-    height: 200px;
+    /* height: 200px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,6 +161,16 @@ div#weather-scroll{
 
 #timer-container h3 {
     text-align: center;
+}
+
+#timer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#timer-content.hide {
+    display: none;
 }
 
 #timer-numbers {
@@ -203,12 +213,12 @@ div#weather-scroll{
 
 #minutes-buttons {
     margin-top: 5px;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 #seconds-buttons {
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 #minutes-buttons  h5{
@@ -224,4 +234,5 @@ div#weather-scroll{
 #timer-control-button {
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 5px;
 }
