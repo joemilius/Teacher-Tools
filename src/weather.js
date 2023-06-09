@@ -1,3 +1,15 @@
+let weatherHeader = document.querySelector('#weather-container h3')
+let weatherContent = document.querySelector('#weather-content')
+weatherHeader.addEventListener('click', (event) => {
+    if (weatherContent.className === 'hide'){
+        weatherContent.className = ''
+        weatherHeader.textContent = "Today's Forecast 🔽"
+    }else{
+        weatherContent.className = 'hide'
+        weatherHeader.textContent = "Today's Forecast ▶️"
+    }
+})
+
 //Fetch for the weather
 const weatherForm = document.getElementById('location-form')
 weatherForm.addEventListener('submit', (event) => {
