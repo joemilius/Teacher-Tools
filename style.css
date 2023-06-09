@@ -4,6 +4,7 @@ body {
 #sidebar {
     height: 100%;
     width: 30%;
+    min-width: 225px;
     position: fixed;
     z-index: 1;
     top: 0;
