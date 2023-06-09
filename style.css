@@ -90,16 +90,6 @@ div#weather-scroll{
     margin-bottom: -2px;
 }
 
-/* #calculator-container.hide {
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    background-color: whitesmoke;
-    border-radius: 25%;
-    margin-left: 5px;
-    margin-right: 5px;
-} */
-
 #calculator-button-container {
     display: flex;
     flex-wrap: wrap;
