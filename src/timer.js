@@ -19,12 +19,28 @@ let minutesMinus = document.querySelector('#minutes-minus')
 let minuteTotal = 0
 
 minutesPlus.addEventListener('click', (event)=> {
-    minuteAdd()
+    minutesAdd()
 })
 
-function minuteAdd(){
+function minutesAdd(){
     minuteTotal++
-    if (minuteTotal < 10){
+    if (minuteTotal < 10 && minuteTotal >= 0){
+        minutesText.textContent = `0${minuteTotal}`
+    } else if (minuteTotal >= 10 && minuteTotal <= 99){
+        minutesText.textContent = minuteTotal
+    }else if (minuteTotal > 99){
+        minuteTotal--
+        minutesText.textContent = 99
+    }
+}
+
+minutesMinus.addEventListener('click', (event)=> {
+    minutesSubtract()
+})
+
+function minutesSubtract(){
+    minuteTotal--
+    if (minuteTotal < 10 && minuteTotal >= 0){
         minutesText.textContent = `0${minuteTotal}`
     } else if (minuteTotal >= 10 && minuteTotal <= 99){
         minutesText.textContent = minuteTotal
