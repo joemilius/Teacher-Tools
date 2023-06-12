@@ -16,20 +16,20 @@ timerHeader.addEventListener('click', (event) => {
 let minutesText = document.querySelector('#minutes')
 let minutesPlus = document.querySelector('#minutes-plus')
 let minutesMinus = document.querySelector('#minutes-minus')
-let minuteTotal = 0
+let minutesTotal = 0
 
 minutesPlus.addEventListener('click', (event)=> {
     minutesAdd()
 })
 
 function minutesAdd(){
-    minuteTotal++
-    if (minuteTotal < 10 && minuteTotal >= 0){
-        minutesText.textContent = `0${minuteTotal}`
+    minutesTotal++
+    if (minutesTotal < 10 && minutesTotal >= 0){
+        minutesText.textContent = `0${minutesTotal}`
     } else if (minuteTotal >= 10 && minuteTotal <= 99){
-        minutesText.textContent = minuteTotal
-    }else if (minuteTotal > 99){
-        minuteTotal--
+        minutesText.textContent = minutesTotal
+    }else if (minutesTotal > 99){
+        minutesTotal--
         minutesText.textContent = 99
     }
 }
@@ -39,13 +39,14 @@ minutesMinus.addEventListener('click', (event)=> {
 })
 
 function minutesSubtract(){
-    minuteTotal--
-    if (minuteTotal < 10 && minuteTotal >= 0){
-        minutesText.textContent = `0${minuteTotal}`
-    } else if (minuteTotal >= 10 && minuteTotal <= 99){
-        minutesText.textContent = minuteTotal
-    }else if (minuteTotal > 99){
-        minuteTotal++
+    minutesTotal--
+    if (minutesTotal < 0){
+        minutesTotal++
+    }else if (minutesTotal < 10 && minutesTotal >= 0){
+        minutesText.textContent = `0${minutesTotal}`
+    } else if (minutesTotal >= 10 && minutesTotal <= 99){
+        minutesText.textContent = minutesTotal
+    }else if (minutesTotal > 99){
         minutesText.textContent = 99
     }
 }
@@ -71,4 +72,25 @@ function secondsAdd(){
         secondsTotal = 0
         minutesAdd()
     }
+}
+
+secondsMinus.addEventListener('click', (event) => {
+    secondsSubtract()
+})
+
+function secondsSubtract(){
+    secondsTotal--
+    console.log(secondsTotal)
+    if (secondsTotal < 0 && minutesTotal === 0){
+        secondsTotal++
+    }else if(secondsTotal < 0 && minutesTotal > 0){
+        secondsTotal = 59
+        secondsText.textContent = '59'
+        minutesSubtract()
+    } else if(secondsTotal < 10 && secondsTotal >= 0){
+        secondsText.textContent = `0${secondsTotal}`
+    } else if (secondsTotal >= 10 && secondsTotal <=59){
+        secondsText.textContent = secondsTotal
+    }
+    console.log(secondsTotal)
 }
