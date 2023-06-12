@@ -176,6 +176,7 @@ div#weather-scroll{
 #timer-numbers {
     display: flex;
     justify-content: center;
+    background-color: whitesmoke;
     border-width: 1px;
     border-style: solid;
     border-color: black;
@@ -231,8 +232,9 @@ div#weather-scroll{
     margin-bottom: 5px;
 }
 
-#timer-control-button {
-    margin-left: 20%;
-    margin-right: 20%;
+#timer-control-buttons {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 5px;
 }

@@ -80,7 +80,7 @@ secondsMinus.addEventListener('click', (event) => {
 
 function secondsSubtract(){
     secondsTotal--
-    console.log(secondsTotal)
+    
     if (secondsTotal < 0 && minutesTotal === 0){
         secondsTotal++
     }else if(secondsTotal < 0 && minutesTotal > 0){
@@ -92,5 +92,44 @@ function secondsSubtract(){
     } else if (secondsTotal >= 10 && secondsTotal <=59){
         secondsText.textContent = secondsTotal
     }
-    console.log(secondsTotal)
+    
 }
+
+// Timer Interval ID //
+
+let intervalId;
+
+function countDown(){
+    secondsSubtract()
+    console.log(minutesTotal)
+    console.log(secondsTotal)
+    if(minutesTotal === 0 && secondsTotal === 0){
+        console.log('hello')
+        clearInterval(intervalId)
+        let timerContainer = document.querySelector('#timer-container')
+        timerContainer.style.background = 'red'
+        setTimeout(() => {
+            timerContainer.style.background = 'whitesmoke'
+        }, 3000)
+
+    }
+}
+
+// Start Button //
+let startButton = document.querySelector('#start-button')
+
+startButton.addEventListener('click', (event) => {
+    intervalId = setInterval(() => {
+        countDown()
+    }, 1000)
+})
+
+
+// Pause Button //
+let pauseButton = document.querySelector('#pause-button')
+console.log(pauseButton)
+
+
+// Clear Button //
+let timerClearButton = document.querySelector('#clear-button')
+console.log(timerClearButton)
