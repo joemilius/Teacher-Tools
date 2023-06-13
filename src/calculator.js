@@ -6,7 +6,6 @@ let equalsButton = document.querySelector('.equals')
 let clearButton = document.querySelector('.clear')
 
 // Calculator Collapse //
-console.log(calcHeader)
 calcHeader.addEventListener('click', (event)=> {
     if(calcContent.className === 'hide'){
         calcContent.className = ''
