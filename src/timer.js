@@ -101,10 +101,8 @@ let intervalId;
 
 function countDown(){
     secondsSubtract()
-    console.log(minutesTotal)
-    console.log(secondsTotal)
+
     if(minutesTotal === 0 && secondsTotal === 0){
-        console.log('hello')
         clearInterval(intervalId)
         let timerContainer = document.querySelector('#timer-container')
         timerContainer.style.background = 'red'
@@ -136,5 +134,12 @@ pauseButton.addEventListener('click', (event) => {
 
 
 // Clear Button //
-let timerClearButton = document.querySelector('#clear-button')
-console.log(timerClearButton)
+let timerResetButton = document.querySelector('#reset-button')
+
+timerResetButton.addEventListener('click', (event) => {
+    minutesTotal = 0
+    secondsTotal = 0
+    minutesText.textContent = '00'
+    secondsText.textContent = '00'
+    clearInterval(intervalId)
+})
