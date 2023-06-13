@@ -109,6 +109,8 @@ function countDown(){
         let timerContainer = document.querySelector('#timer-container')
         timerContainer.style.background = 'red'
         setTimeout(() => {
+            minutesTotal = 0
+            secondsTotal = 0
             timerContainer.style.background = 'whitesmoke'
         }, 3000)
 
@@ -127,7 +129,10 @@ startButton.addEventListener('click', (event) => {
 
 // Pause Button //
 let pauseButton = document.querySelector('#pause-button')
-console.log(pauseButton)
+
+pauseButton.addEventListener('click', (event) => {
+    clearInterval(intervalId)
+})
 
 
 // Clear Button //
