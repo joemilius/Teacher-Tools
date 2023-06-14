@@ -82,7 +82,7 @@ div#weather-scroll{
     border-color: black;
     border-width: 2px;
     background-color: whitesmoke;
-    border-radius: 10%;
+    border-radius: 25px;
     margin-left: 5px;
     margin-right: 5px;
     overflow: hidden;
@@ -256,4 +256,45 @@ div#weather-scroll{
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5px;
+}
+
+/* Class Points Styling */
+
+#class-points-container {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+}
+
+#class-points-container h3 {
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+#class-points-content h4 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkseagreen;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#points-buttons {
+    margin-bottom: 15px;
 }
