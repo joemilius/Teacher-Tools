@@ -278,10 +278,11 @@ div#weather-scroll{
 
 #class-points-container h3 {
     margin-right: 25px;
-    margin-bottom: 10px;
 }
 
-
+#class-points-content.hide {
+    display: none;
+}
 
 #class-points-content h4 {
     border-width: 1px;
