@@ -37,3 +37,12 @@ pointsSubtract.addEventListener('click', (event) => {
     pointsText.textContent = pointsTotal
     }
 })
+
+//Reset Button //
+
+let pointsReset = document.querySelector('#points-reset')
+
+pointsReset.addEventListener('click', (event) => {
+    pointsTotal = 0
+    pointsText.textContent = pointsTotal
+})
