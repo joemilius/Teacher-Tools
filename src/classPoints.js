@@ -27,3 +27,13 @@ pointsAdd.addEventListener('click', (event) => {
     pointsText.textContent = pointsTotal
 })
 
+// Subtract Button //
+
+let pointsSubtract = document.querySelector('#points-subtract')
+
+pointsSubtract.addEventListener('click', (event) => {
+    if(pointsTotal > 0){
+    pointsTotal--
+    pointsText.textContent = pointsTotal
+    }
+})
