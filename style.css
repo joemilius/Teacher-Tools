@@ -299,3 +299,33 @@ div#weather-scroll{
 #points-buttons {
     margin-bottom: 15px;
 }
+
+/* Dictionary */
+
+#dictionary-container {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#dictionary-container h3 {
+    text-align: center;
+}
+
+#word-form {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#word-display {
+    padding: 10px;
+}
+
+#word-display p {
+    overflow-wrap: break-word;
+}
