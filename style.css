@@ -317,10 +317,18 @@ div#weather-scroll{
     text-align: center;
 }
 
+#dictionary-content.hide {
+    display: none;
+}
+
 #word-form {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+#word-display.hide {
+    display: none;
 }
 
 #word-display {
