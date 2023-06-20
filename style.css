@@ -338,3 +338,7 @@ div#weather-scroll{
 #word-display p {
     overflow-wrap: break-word;
 }
+
+#word {
+    text-align: center;
+}
