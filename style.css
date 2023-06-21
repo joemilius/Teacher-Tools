@@ -325,6 +325,7 @@ div#weather-scroll{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 #word-display.hide {
@@ -332,7 +333,8 @@ div#weather-scroll{
 }
 
 #word-display {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #word-display p {
@@ -341,4 +343,7 @@ div#weather-scroll{
 
 #word {
     text-align: center;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    border-top-color: darkseagreen;
 }

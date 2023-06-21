@@ -35,7 +35,7 @@ function renderDictionary(data, word){
     wordHeader.textContent = word
     wordDisplay.className = ''
     meaningList.innerHTML = ''
-    // wordInput.value = ''
+    wordInput.value = ''
     console.log(data)
      
     let synonymsArray = []
