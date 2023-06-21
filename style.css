@@ -1,6 +1,13 @@
 body {
     background-color: whitesmoke;
 }
+
+header h1 {
+    color: darkseagreen;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: darkseagreen;
+}
 #sidebar {
     height: 100%;
     width: 30%;
