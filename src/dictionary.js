@@ -32,13 +32,15 @@ wordForm.addEventListener('submit', (event) => {
 })
 
 function renderDictionary(data, word){
+    wordHeader.textContent = word
     wordDisplay.className = ''
     meaningList.innerHTML = ''
+    // wordInput.value = ''
     console.log(data)
      
     let synonymsArray = []
     let antonymsArray = []
-    wordHeader.textContent = word
+    
     data.forEach( wordObj => {
         wordObj.meanings.forEach( meaning => {
             synonymsArray = [...synonymsArray, ...meaning.synonyms]
