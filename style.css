@@ -354,3 +354,20 @@ div#weather-scroll{
     border-top-width: 1px;
     border-top-color: darkseagreen;
 }
+
+/* Learning Objective Styling */
+
+#learning-objectives-content {
+    margin-top: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: darkseagreen;
+}
+
+.objective-display {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.objective-p {
+    margin: none;
+}
