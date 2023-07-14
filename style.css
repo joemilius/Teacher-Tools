@@ -371,3 +371,16 @@ div#weather-scroll{
 .objective-p {
     margin: none;
 }
+
+/* Slide Show Styling */
+
+#slideshow-container {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: darkseagreen;
+}
+
+#slideshow-display {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
