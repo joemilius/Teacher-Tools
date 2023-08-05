@@ -5,9 +5,11 @@ slideForm.addEventListener('submit', (e) => {
     e.preventDefault()
     let slideInput = document.querySelector('#slideshow-link')
     let display = document.querySelector('#slideshow-display')
+
+    console.log(slideInput.value.slice(0, 7))
      
 
-    if (slideInput.value[0] === '<'){
+    if (slideInput.value.slice(0,7) === '<iframe'){
         let error = document.querySelector('#slide-error')
         if (error){
             error.remove()
