@@ -384,3 +384,26 @@ div#weather-scroll{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+/* Schedule Styling */
+
+#schedule-container {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#schedule-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#schedule-content.hide {
+    display: none;
+}
