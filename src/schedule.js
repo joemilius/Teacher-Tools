@@ -14,8 +14,20 @@ scheduleHeader.addEventListener('click', (event) => {
 let scheduleForm = document.querySelector("#schedule-form")
 scheduleForm.addEventListener("submit", event => {
     event.preventDefault()
+    let scheduleDisplay = document.querySelector('#schedule-display')
     let timeInput = document.querySelector("#time-input")
     let eventInput = document.querySelector("#event-input")
-    console.log(timeInput.value)
-    console.log(eventInput.value)
+    let eventContainer = document.createElement('div')
+    let time = document.createElement('h3')
+    let eventH3 = document.createElement('h3')
+
+    eventContainer.className = 'event-container'
+    time.textContent = timeInput.value
+    eventH3.textContent = eventInput.value
+    eventContainer.append(time, eventH3)
+    scheduleDisplay.append(eventContainer)
+    
+
 })
+
+
