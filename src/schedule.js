@@ -10,3 +10,12 @@ scheduleHeader.addEventListener('click', (event) => {
         scheduleHeader.textContent = "Today's Forecast ▶️"
     }
 })
+
+let scheduleForm = document.querySelector("#schedule-form")
+scheduleForm.addEventListener("submit", event => {
+    event.preventDefault()
+    let timeInput = document.querySelector("#time-input")
+    let eventInput = document.querySelector("#event-input")
+    console.log(timeInput.value)
+    console.log(eventInput.value)
+})
