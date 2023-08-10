@@ -407,3 +407,14 @@ div#weather-scroll{
 #schedule-content.hide {
     display: none;
 }
+
+.event-container {
+    display: flex;
+    justify-content: center;
+}
+
+.event-container h3 {
+    margin: 2px;
+    border-style: solid;
+    border-color: darkseagreen;
+}
