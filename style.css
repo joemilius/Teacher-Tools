@@ -398,6 +398,10 @@ div#weather-scroll{
     margin-bottom: 5px;
 }
 
+#schedule-container h3 {
+    text-align: center;
+}
+
 #schedule-content {
     display: flex;
     flex-direction: column;
@@ -408,13 +412,32 @@ div#weather-scroll{
     display: none;
 }
 
-.event-container {
+#schedule-form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
 }
 
-.event-container h3 {
-    margin: 2px;
+#schedule-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-spacing: 0;
+}
+
+#schedule-table tr th{
     border-style: solid;
     border-color: darkseagreen;
+    border-width: 2px;
+    
+}
+
+#schedule-table tr td {
+    border-width: 2px;
+    border-style: solid;
+    border-color: darkseagreen;
+    text-align: center;
 }
