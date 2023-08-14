@@ -21,7 +21,9 @@ scheduleForm.addEventListener("submit", event => {
     let time = document.createElement('td')
     let activityH3 = document.createElement('td')
 
-    activityContainer.className = 'event-container'
+    time.className = 'schedule-time'
+    activityH3.className = 'schedule-activity'
+
     time.textContent = timeInput.value
     activityH3.textContent = activityInput.value
     activityContainer.append(time, activityH3)
