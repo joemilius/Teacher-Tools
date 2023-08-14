@@ -428,15 +428,39 @@ div#weather-scroll{
     border-spacing: 0;
 }
 
-#schedule-table tr th{
+#schedule-table tbody tr th.schedule-time{
     border-style: solid;
     border-color: darkseagreen;
-    border-width: 2px;
-    
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-right-width: 1px;
 }
 
-#schedule-table tr td {
-    border-width: 2px;
+#schedule-table tbody tr th.schedule-activity{
+    border-style: solid;
+    border-color: darkseagreen;
+    border-top-width: 2px;
+    border-left-width: 1px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+}
+
+#schedule-table tbody tr td.schedule-time {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 1px;
+    border-top-width: 0px;
+    border-style: solid;
+    border-color: darkseagreen;
+    text-align: center;
+}
+
+#schedule-table tbody tr td.schedule-activity {
+    border-bottom-width: 2px;
+    border-left-width: 1px;
+    border-right-width: 2px;
+    border-top-width: 0px;
     border-style: solid;
     border-color: darkseagreen;
     text-align: center;
