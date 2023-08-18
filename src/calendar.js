@@ -16,11 +16,11 @@ console.log(lastWeekDay)
 for (let i = lastDay.getDate(); i > 0 ; i -= 7){
 
     if (i === 31 || i === 30 || i === 29 || i === 28){
-        lastWeekOfMonthRender(i, lastWeekDay)
+        renderLastWeekOfMonth(i, lastWeekDay)
     }
 }
 
-function lastWeekOfMonthRender(date, weekday){
+function renderLastWeekOfMonth(date, weekday){
     let calendarHeader = document.querySelector('#calendar-table').children[0]
     let calendarRow = document.createElement('tr')
     let sunday = document.createElement('td')
@@ -92,3 +92,77 @@ function lastWeekOfMonthRender(date, weekday){
     calendarRow.append(sunday, monday, tuesday, wednesday, thursday, friday, saturday)
     calendarHeader.parentNode.insertBefore(calendarRow, calendarHeader.nextElementSibling)
 }
+
+function renderFirstWeekOfMonth(date){
+    let calendarHeader = document.querySelector('#calendar-table').children[0]
+    let calendarRow = document.createElement('tr')
+    let sunday = document.createElement('td')
+    let monday = document.createElement('td')
+    let tuesday = document.createElement('td')
+    let wednesday = document.createElement('td')
+    let thursday = document.createElement('td')
+    let friday = document.createElement('td')
+    let saturday = document.createElement('td')
+
+    if(date === 7){
+        saturday.innerText = date
+        friday.innerText = date - 1
+        thursday.innerText = date - 2
+        wednesday.innerText = date - 3
+        tuesday.innerText = date - 4
+        monday.innerText = date - 5
+        sunday.innerText = date - 6
+    }else if (date === 6){
+        saturday.innerText = date
+        friday.innerText = date - 1
+        thursday.innerText = date - 2
+        wednesday.innerText = date - 3
+        tuesday.innerText = date - 4
+        monday.innerText = date - 5
+        sunday.innerText = ''
+    }else if (date === 5){
+        saturday.innerText = date
+        friday.innerText = date - 1
+        thursday.innerText = date - 2
+        wednesday.innerText = date - 3
+        tuesday.innerText = date - 4
+        monday.innerText = ''
+        sunday.innerText = ''
+    }else if (date === 4){
+        saturday.innerText = date
+        friday.innerText = date - 1
+        thursday.innerText = date - 2
+        wednesday.innerText = date - 3
+        tuesday.innerText = ''
+        monday.innerText = ''
+        sunday.innerText = ''
+    }else if (date === 3){
+        saturday.innerText = date
+        friday.innerText = date - 1
+        thursday.innerText = date - 2
+        wednesday.innerText = ''
+        tuesday.innerText = ''
+        monday.innerText = ''
+        sunday.innerText = ''
+    }else if (date === 2){
+        saturday.innerText = date
+        friday.innerText = date - 1
+        thursday.innerText = ''
+        wednesday.innerText = ''
+        tuesday.innerText = ''
+        monday.innerText = ''
+        sunday.innerText = ''
+    }else if (date === 1){
+        saturday.innerText = date
+        friday.innerText = ''
+        thursday.innerText = ''
+        wednesday.innerText = ''
+        tuesday.innerText = ''
+        monday.innerText = ''
+        sunday.innerText = ''
+    }
+    
+    calendarRow.append(sunday, monday, tuesday, wednesday, thursday, friday, saturday)
+    calendarHeader.parentNode.insertBefore(calendarRow, calendarHeader.nextElementSibling)
+}
+
