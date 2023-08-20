@@ -17,6 +17,10 @@ for (let i = lastDay.getDate(); i > 0 ; i -= 7){
 
     if (i === 31 || i === 30 || i === 29 || i === 28){
         renderLastWeekOfMonth(i, lastWeekDay)
+    }else if(i < 8){
+        renderFirstWeekOfMonth(i)
+    }else{
+        renderWeek(i)
     }
 }
 
@@ -162,6 +166,29 @@ function renderFirstWeekOfMonth(date){
         sunday.innerText = ''
     }
     
+    calendarRow.append(sunday, monday, tuesday, wednesday, thursday, friday, saturday)
+    calendarHeader.parentNode.insertBefore(calendarRow, calendarHeader.nextElementSibling)
+}
+
+function renderWeek(date){
+    let calendarHeader = document.querySelector('#calendar-table').children[0]
+    let calendarRow = document.createElement('tr')
+    let sunday = document.createElement('td')
+    let monday = document.createElement('td')
+    let tuesday = document.createElement('td')
+    let wednesday = document.createElement('td')
+    let thursday = document.createElement('td')
+    let friday = document.createElement('td')
+    let saturday = document.createElement('td')
+
+    saturday.innerText = date
+    friday.innerText = date - 1
+    thursday.innerText = date - 2
+    wednesday.innerText = date - 3
+    tuesday.innerText = date - 4
+    monday.innerText = date - 5
+    sunday.innerText = date - 6
+
     calendarRow.append(sunday, monday, tuesday, wednesday, thursday, friday, saturday)
     calendarHeader.parentNode.insertBefore(calendarRow, calendarHeader.nextElementSibling)
 }
