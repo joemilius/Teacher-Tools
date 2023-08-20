@@ -1,14 +1,18 @@
 let today = new Date
 let dayNow = today.toString().split(' ')[0]
 
-let month = today.getMonth() + 1
+let month = today.getMonth()
+let monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+let monthHeader = document.querySelector('#monthHeader')
+monthHeader.innerText = monthArray[month]
 
 let year = today.getFullYear()
+
 
 let dateNow = today.getDate()
 
 
-let lastDay = new Date(year, month, 0)
+let lastDay = new Date(year, month + 1, 0)
 let lastWeekDay = lastDay.toString().split(' ')[0]
 console.log(lastDay.getDate())
 console.log(lastWeekDay)
