@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="embed-style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <form id="calendar-form">
@@ -27,17 +27,19 @@
         </div>
         <div>
             <h3>Calandar Sentence Stems</h3>
-            <p>Yesterday was __________</p>
-            <p>Today is _________</p>
-            <p>Tomorrow will be __________</p>
+            <p>Yesterday was <span class="stem_filler">__________</span></p>
+            <p>Today is <span class="stem-filler">__________</span></p>
+            <p>Tomorrow will be <span class="stem-filler">__________</span></p>
             <br>
-            <p>Sunday</p>
-            <p>Monday</p>
-            <p>Tuesday</p>
-            <p>Wednesday</p>
-            <p>Thursday</p>
-            <p>Friday</p>
-            <p>Saturday</p>
+            <div id="days-container">
+                <p class="day" draggable="true">Sunday</p>
+                <p class="day" draggable="true">Monday</p>
+                <p class="day" draggable="true">Tuesday</p>
+                <p class="day" draggable="true">Wednesday</p>
+                <p class="day" draggable="true">Thursday</p>
+                <p class="day" draggable="true">Friday</p>
+                <p class="day" draggable="true">Saturday</p>
+            </div>
         </div>
         <script src="src/calendar.js" charset="utf-8"></script>
     </body>
