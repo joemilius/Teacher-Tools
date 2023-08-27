@@ -197,3 +197,12 @@ function renderWeek(date){
     calendarHeader.parentNode.insertBefore(calendarRow, calendarHeader.nextElementSibling)
 }
 
+let sentenceStems = document.querySelectorAll('.stem-filler')
+console.log(sentenceStems)
+
+let weekdays = document.querySelectorAll('.day')
+weekdays.forEach(day => {
+    day.addEventListener('dragstart', (e) => {
+
+    })
+})
