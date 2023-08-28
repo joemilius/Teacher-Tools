@@ -465,3 +465,95 @@ div#weather-scroll{
     border-color: darkseagreen;
     text-align: center;
 }
+
+#calendar-table {
+    
+    border-spacing: 0;
+}
+
+#calendar-table tr th.calendar-sunday{
+    border-style: solid;
+    border-color: darkseagreen;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+}
+
+#calendar-table tr th.calendar-saturday {
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-style: solid;
+    border-color: darkseagreen;
+    text-align: center;
+}
+
+#calendar-table tr th.calendar-day {
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 2px;
+    border-style: solid;
+    border-color: darkseagreen;
+    text-align: center;
+}
+
+#calendar-table tr td.calendar-sunday{
+    border-style: solid;
+    border-color: darkseagreen;
+    border-top-width: 1px;
+    border-left-width: 2px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+}
+
+#calendar-table tr td.calendar-saturday {
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 2px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: darkseagreen;
+    text-align: center;
+}
+
+#calendar-table tr td.calendar-day {
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: darkseagreen;
+    text-align: center;
+}
+
+#calendar-table tr td.calendar-sunday-bottom{
+    border-style: solid;
+    border-color: darkseagreen;
+    border-top-width: 1px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-right-width: 1px;
+}
+
+#calendar-table tr td.calendar-saturday-bottom {
+    border-bottom-width: 2px;
+    border-left-width: 1px;
+    border-right-width: 2px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: darkseagreen;
+    text-align: center;
+}
+
+#calendar-table tr td.calendar-day-bottom {
+    border-bottom-width: 2px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: darkseagreen;
+    text-align: center;
+}
