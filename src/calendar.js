@@ -39,6 +39,14 @@ function renderLastWeekOfMonth(date, weekday){
     let friday = document.createElement('td')
     let saturday = document.createElement('td')
 
+    sunday.className = "calendar-sunday-bottom"
+    monday.className = "calendar-day-bottom"
+    tuesday.className = "calendar-day-bottom"
+    wednesday.className = "calendar-day-bottom"
+    thursday.className = "calendar-day-bottom"
+    friday.className = "calendar-day-bottom"
+    saturday.className = "calendar-saturday-bottom"
+
     if(weekday === 'Sat'){
         saturday.innerText = date
         friday.innerText = date - 1
@@ -111,6 +119,14 @@ function renderFirstWeekOfMonth(date){
     let thursday = document.createElement('td')
     let friday = document.createElement('td')
     let saturday = document.createElement('td')
+
+    sunday.className = "calendar-sunday"
+    monday.className = "calendar-day"
+    tuesday.className = "calendar-day"
+    wednesday.className = "calendar-day"
+    thursday.className = "calendar-day"
+    friday.className = "calendar-day"
+    saturday.className = "calendar-saturday"
 
     if(date === 7){
         saturday.innerText = date
@@ -185,6 +201,14 @@ function renderWeek(date){
     let friday = document.createElement('td')
     let saturday = document.createElement('td')
 
+    sunday.className = "calendar-sunday"
+    monday.className = "calendar-day"
+    tuesday.className = "calendar-day"
+    wednesday.className = "calendar-day"
+    thursday.className = "calendar-day"
+    friday.className = "calendar-day"
+    saturday.className = "calendar-saturday"
+
     saturday.innerText = date
     friday.innerText = date - 1
     thursday.innerText = date - 2
@@ -209,7 +233,7 @@ weekdays.forEach(day => {
             })
             stem.addEventListener('drop', (e) => {
                 stem.textContent = day.textContent
-                day = null
+                day.textContent = null
             })
         })
     })
