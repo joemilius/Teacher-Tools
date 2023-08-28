@@ -203,6 +203,14 @@ console.log(sentenceStems)
 let weekdays = document.querySelectorAll('.day')
 weekdays.forEach(day => {
     day.addEventListener('dragstart', (e) => {
-
+        sentenceStems.forEach(stem => {
+            stem.addEventListener('dragover', (e) => {
+                e.preventDefault()
+            })
+            stem.addEventListener('drop', (e) => {
+                stem.textContent = day.textContent
+                day = null
+            })
+        })
     })
 })
