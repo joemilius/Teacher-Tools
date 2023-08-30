@@ -467,7 +467,8 @@ div#weather-scroll{
 }
 
 #calendar-table {
-    
+    height: 350px;
+    width: 350px;
     border-spacing: 0;
 }
 
@@ -516,7 +517,6 @@ div#weather-scroll{
     border-top-width: 1px;
     border-style: solid;
     border-color: darkseagreen;
-    text-align: center;
 }
 
 #calendar-table tr td.calendar-day {
@@ -526,7 +526,6 @@ div#weather-scroll{
     border-top-width: 1px;
     border-style: solid;
     border-color: darkseagreen;
-    text-align: center;
 }
 
 #calendar-table tr td.calendar-sunday-bottom{
@@ -545,7 +544,6 @@ div#weather-scroll{
     border-top-width: 1px;
     border-style: solid;
     border-color: darkseagreen;
-    text-align: center;
 }
 
 #calendar-table tr td.calendar-day-bottom {
@@ -555,5 +553,4 @@ div#weather-scroll{
     border-top-width: 1px;
     border-style: solid;
     border-color: darkseagreen;
-    text-align: center;
 }
