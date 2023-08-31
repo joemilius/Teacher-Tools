@@ -508,6 +508,7 @@ div#weather-scroll{
     border-left-width: 2px;
     border-bottom-width: 1px;
     border-right-width: 1px;
+    vertical-align: top;
 }
 
 #calendar-table tr td.calendar-saturday {
@@ -517,6 +518,7 @@ div#weather-scroll{
     border-top-width: 1px;
     border-style: solid;
     border-color: darkseagreen;
+    vertical-align: top;
 }
 
 #calendar-table tr td.calendar-day {
@@ -526,6 +528,7 @@ div#weather-scroll{
     border-top-width: 1px;
     border-style: solid;
     border-color: darkseagreen;
+    vertical-align: top;
 }
 
 #calendar-table tr td.calendar-sunday-bottom{
@@ -535,6 +538,7 @@ div#weather-scroll{
     border-left-width: 2px;
     border-bottom-width: 2px;
     border-right-width: 1px;
+    vertical-align: top;
 }
 
 #calendar-table tr td.calendar-saturday-bottom {
@@ -544,6 +548,7 @@ div#weather-scroll{
     border-top-width: 1px;
     border-style: solid;
     border-color: darkseagreen;
+    vertical-align: top;
 }
 
 #calendar-table tr td.calendar-day-bottom {
@@ -553,4 +558,5 @@ div#weather-scroll{
     border-top-width: 1px;
     border-style: solid;
     border-color: darkseagreen;
+    vertical-align: top;
 }
