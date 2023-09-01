@@ -466,9 +466,14 @@ div#weather-scroll{
     text-align: center;
 }
 
+#monthHeader {
+    text-align: center;
+    width: 700px;
+}
+
 #calendar-table {
     height: 350px;
-    width: 350px;
+    width: 700px;
     border-spacing: 0;
 }
 
@@ -479,6 +484,7 @@ div#weather-scroll{
     border-left-width: 2px;
     border-bottom-width: 1px;
     border-right-width: 1px;
+    width: 100px;
 }
 
 #calendar-table tr th.calendar-saturday {
@@ -489,6 +495,7 @@ div#weather-scroll{
     border-style: solid;
     border-color: darkseagreen;
     text-align: center;
+    width: 100px;
 }
 
 #calendar-table tr th.calendar-day {
@@ -499,6 +506,7 @@ div#weather-scroll{
     border-style: solid;
     border-color: darkseagreen;
     text-align: center;
+    width: 100px;
 }
 
 #calendar-table tr td.calendar-sunday{
@@ -509,6 +517,7 @@ div#weather-scroll{
     border-bottom-width: 1px;
     border-right-width: 1px;
     vertical-align: top;
+    width: 100px;
 }
 
 #calendar-table tr td.calendar-saturday {
@@ -519,6 +528,7 @@ div#weather-scroll{
     border-style: solid;
     border-color: darkseagreen;
     vertical-align: top;
+    width: 100px;
 }
 
 #calendar-table tr td.calendar-day {
@@ -529,6 +539,7 @@ div#weather-scroll{
     border-style: solid;
     border-color: darkseagreen;
     vertical-align: top;
+    width: 100px;
 }
 
 #calendar-table tr td.calendar-sunday-bottom{
@@ -539,6 +550,7 @@ div#weather-scroll{
     border-bottom-width: 2px;
     border-right-width: 1px;
     vertical-align: top;
+    width: 100px;
 }
 
 #calendar-table tr td.calendar-saturday-bottom {
@@ -549,6 +561,7 @@ div#weather-scroll{
     border-style: solid;
     border-color: darkseagreen;
     vertical-align: top;
+    width: 100px;
 }
 
 #calendar-table tr td.calendar-day-bottom {
@@ -559,4 +572,5 @@ div#weather-scroll{
     border-style: solid;
     border-color: darkseagreen;
     vertical-align: top;
+    width: 100px;
 }
