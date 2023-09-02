@@ -107,6 +107,7 @@ function renderLastWeekOfMonth(date, weekday){
     
     calendarRow.append(sunday, monday, tuesday, wednesday, thursday, friday, saturday)
     calendarHeader.parentNode.insertBefore(calendarRow, calendarHeader.nextElementSibling)
+    addInput([sunday, monday, tuesday, wednesday, thursday, friday, saturday])
 }
 
 function renderFirstWeekOfMonth(date){
@@ -188,6 +189,7 @@ function renderFirstWeekOfMonth(date){
     
     calendarRow.append(sunday, monday, tuesday, wednesday, thursday, friday, saturday)
     calendarHeader.parentNode.insertBefore(calendarRow, calendarHeader.nextElementSibling)
+    addInput([sunday, monday, tuesday, wednesday, thursday, friday, saturday])
 }
 
 function renderWeek(date){
@@ -219,6 +221,19 @@ function renderWeek(date){
 
     calendarRow.append(sunday, monday, tuesday, wednesday, thursday, friday, saturday)
     calendarHeader.parentNode.insertBefore(calendarRow, calendarHeader.nextElementSibling)
+    addInput([sunday, monday, tuesday, wednesday, thursday, friday, saturday])
+}
+
+function addInput(dayArray){
+    dayArray.forEach((day) => {
+        day.addEventListener('click', () => {
+            let input = document.createElement('input')
+            input.type = 'text'
+            let eventSubmit = document.createElement('button')
+            day.append(input, eventSubmit)
+            input.focus()
+        })
+    })
 }
 
 let sentenceStems = document.querySelectorAll('.stem-filler')
