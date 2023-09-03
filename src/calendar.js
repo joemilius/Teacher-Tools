@@ -229,9 +229,15 @@ function addInput(dayArray){
         day.addEventListener('click', () => {
             let input = document.createElement('input')
             input.type = 'text'
+            input.className = 'dayEvent'
             let eventSubmit = document.createElement('button')
             day.append(input, eventSubmit)
             input.focus()
+
+            input.addEventListener('blur', ()=>{
+                input.remove()
+                eventSubmit.remove()
+            })
         })
     })
 }
