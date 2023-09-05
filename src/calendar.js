@@ -235,6 +235,9 @@ function addInput(dayArray){
             input.focus()
 
             input.addEventListener('blur', ()=>{
+                let p = document.createElement('p')
+                p.textContent = input.value
+                day.append(p)
                 input.remove()
                 eventSubmit.remove()
             })
