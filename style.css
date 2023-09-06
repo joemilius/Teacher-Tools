@@ -574,3 +574,15 @@ div#weather-scroll{
     vertical-align: top;
     width: 100px;
 }
+
+#days-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.day {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: darkseagreen;
+}

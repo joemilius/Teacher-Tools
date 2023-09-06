@@ -14,8 +14,7 @@ let dateNow = today.getDate()
 
 let lastDay = new Date(year, month + 1, 0)
 let lastWeekDay = lastDay.toString().split(' ')[0]
-console.log(lastDay.getDate())
-console.log(lastWeekDay)
+
 
 for (let i = lastDay.getDate(); i > 0 ; i -= 7){
 
@@ -231,6 +230,7 @@ function addInput(dayArray){
             input.type = 'text'
             input.className = 'dayEvent'
             let eventSubmit = document.createElement('button')
+            eventSubmit.textContent = "Enter Activity"
             day.append(input, eventSubmit)
             input.focus()
 
@@ -246,7 +246,6 @@ function addInput(dayArray){
 }
 
 let sentenceStems = document.querySelectorAll('.stem-filler')
-console.log(sentenceStems)
 
 let weekdays = document.querySelectorAll('.day')
 weekdays.forEach(day => {
