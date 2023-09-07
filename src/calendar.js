@@ -251,13 +251,26 @@ let weekdays = document.querySelectorAll('.day')
 weekdays.forEach(day => {
     day.addEventListener('dragstart', (e) => {
         sentenceStems.forEach(stem => {
+            let underscore = stem.textContent
+            let dayText = day.textContent
             stem.addEventListener('dragover', (e) => {
                 e.preventDefault()
             })
             stem.addEventListener('drop', (e) => {
-                stem.textContent = day.textContent
-                day.textContent = null
+                stem.textContent = dayText
+                day.textContent = underscore
+                stem.draggable = true
+                stem.addEventListener('dragstart', () => {
+                    day.addEventListener('dragover', (e) => {
+                        e.preventDefault()
+                    })
+                    day.addEventListener('drop', () => {
+                        day.textContent = dayText
+                        stem.textContent = underscore
+                    })
+                })
             })
+            
         })
     })
 })
