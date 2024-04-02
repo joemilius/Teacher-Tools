@@ -4,10 +4,10 @@ let scheduleContent = document.querySelector('#schedule-content')
 scheduleHeader.addEventListener('click', (event) => {
     if (scheduleContent.className === 'hide'){
         scheduleContent.className = ''
-        scheduleHeader.textContent = "Today's Forecast 🔽"
+        scheduleHeader.textContent = "Today's Schedule 🔽"
     }else{
         scheduleContent.className = 'hide'
-        scheduleHeader.textContent = "Today's Forecast ▶️"
+        scheduleHeader.textContent = "Today's Schedule ▶️"
     }
 })
 
